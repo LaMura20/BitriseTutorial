@@ -14,6 +14,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func testFuncaaa(pIn: Int) -> Int{
+        var aaa = pIn + 1
+        if aaa < 10{
+            
+        }else{
+            aaa = 0
+        }
+        return aaa
+    }
 
 }
 
+func get(text: String) -> String {
+    return text
+}

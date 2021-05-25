@@ -21,6 +21,23 @@ class BitriseTutorialTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual("test", get(text: "test"))
+    }
+    
+    //    func testFuncaaa(pIn: Int) -> Int{
+    func testNkFunc() throws {
+        
+        let bbb = ViewController()
+        for i in 0..<10{
+            if i < 9{
+                XCTAssertEqual(bbb.testFuncaaa(pIn: i), i+1)
+            }else{
+                XCTAssertEqual(bbb.testFuncaaa(pIn: i), 0)
+            }
+        }
+//        XCTAssertEqual(bbb.testFuncaaa(pIn: 1), 2)
+//        XCTAssertEqual(bbb.testFuncaaa(pIn: 8), 9)
+//        XCTAssertEqual(bbb.testFuncaaa(pIn: 9), 0)
     }
 
     func testPerformanceExample() throws {
